@@ -3,7 +3,7 @@ import sys
 import csv
 from Bio import SeqIO
 
-#os.popen('cp /home/IEC/kennypinheiro/Downloads/Teste/pasta_contigs/*.fa /home/IEC/kennypinheiro/Downloads/Teste/')
+#os.popen('cp $HOME/Teste/pasta_contigs/*.fa $HOME/Teste/')
 
 tsv_file = open("virus.tsv") #Path for TSV table. Changes in 1 column.
 
@@ -21,10 +21,10 @@ zip_iterator = zip(lista_contigs, lista_samples)
 a_dictionary = dict(zip_iterator)
 
 #Directory with assembled contigs fasta
-directory = "/home/IEC/kennypinheiro/Downloads/Teste/pasta_contigs" # <-- change here
+directory = "$HOME/Teste/pasta_contigs" # <-- change here
 
 #Create tmp files
-#os.popen('cp /home/IEC/kennypinheiro/Downloads/Teste/pasta_contigs/*.fa /home/IEC/kennypinheiro/Downloads/Teste/') # <-- change here
+#os.popen('cp $HOME/Teste/pasta_contigs/*.fa $HOME/Teste/') # <-- change here
 
 files_contigs = os.listdir(directory)
 
@@ -43,8 +43,8 @@ for i in range(qtd_files_contigs):
 						sys.stdout = original_stdout
 
 #Remove tmp files
-os.popen('rm /home/IEC/kennypinheiro/Downloads/Teste/*.fa') # <-- change here
+os.popen('rm $HOME/Teste/*.fa') # <-- change here
 
 #Moving results to a new directory
-os.popen('mkdir /home/IEC/kennypinheiro/Downloads/Teste/results/') # <-- change here
-os.popen('mv /home/IEC/kennypinheiro/Downloads/Teste/*.fasta /home/IEC/kennypinheiro/Downloads/Teste/results/') # <-- change here
+os.popen('mkdir $HOME/Teste/results/') # <-- change here
+os.popen('mv $HOME/Teste/*.fasta $HOME/Teste/results/') # <-- change here
