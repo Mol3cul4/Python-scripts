@@ -3,6 +3,7 @@ import sys
 import csv
 from Bio import SeqIO
 
+#Create tmp files
 #os.popen('cp $HOME/Teste/pasta_contigs/*.fa $HOME/Teste/')
 
 tsv_file = open("virus.tsv") #Path for TSV table. Changes in 1 column.
@@ -22,9 +23,6 @@ a_dictionary = dict(zip_iterator)
 
 #Directory with assembled contigs fasta
 directory = "$HOME/Teste/pasta_contigs" # <-- change here
-
-#Create tmp files
-#os.popen('cp $HOME/Teste/pasta_contigs/*.fa $HOME/Teste/') # <-- change here
 
 files_contigs = os.listdir(directory)
 
