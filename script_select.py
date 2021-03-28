@@ -1,4 +1,4 @@
-#Autor: Kenny Pinheiro
+#Author: Kenny Pinheiro
 #Data: 22/03/2021
 
 import os
