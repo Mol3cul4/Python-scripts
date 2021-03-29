@@ -1,5 +1,5 @@
 #Author: Kenny Pinheiro
-#Data: 22/03/2021
+#Date: 22/03/2021
 
 import os
 import sys
