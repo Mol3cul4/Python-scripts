@@ -1,6 +1,6 @@
 import turtle
 import math
-bob = turtle.Turtle() 
+k = turtle.Turtle() 
 
 def square(t, length):
 	for i in range(4):
@@ -18,4 +18,4 @@ def circle(t, r):
 	length = circumference / n
 	polygon(t, length, n)
 
-circle(bob, 50)
+circle(k, 50)
